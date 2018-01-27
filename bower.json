@@ -1,0 +1,22 @@
+{
+  "name": "mogo",
+  "description": "Landing Page",
+  "main": "index.js",
+  "authors": [
+    "Vladimir A."
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*"
+  }
+}

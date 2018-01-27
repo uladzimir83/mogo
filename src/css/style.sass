@@ -1,0 +1,983 @@
+/*  импорт таблиц стилей плагинов, сброса стилей  */
+@import 'scss/font-awesome.scss'
+@import '../libs/normalize/normalize'
+@import 'owl.carousel'
+@import 'fonts'
+@import 'foundation.min'
+@import 'reset'
+@import 'jquery.mCustomScrollbar'
+
+/*  переменные основных цветов   */
+$color-main: #fff
+$color-menu_hover: #fce38a
+$color-header: #000
+$color-parag: #999
+$color-header_3: #333
+
+/*  переменные шрифтов  */
+$font-montserrat-b: montserratbold
+$font-montserrat-r: montserratregular
+$font-kaushanscript: kaushan_scriptregular
+$font-roboto-reg: robotoregular
+$font-roboto-it: robotolight_italic
+
+
+/*  некоторые общие стили  */
+
+html
+  overflow: auto
+
+body
+  color: $color-main
+  font:
+    family: $font-roboto-reg
+    size: 15px
+  overflow: hidden
+
+h4
+  color: $color-header_3
+  font:
+    family: $font-montserrat-r
+    size: .93333em
+  text-transform: uppercase
+
+a
+  text-decoration: none
+  cursor: pointer
+
+
+  /*  основные стили  */
+
+/* header == menu + slider */
+
+.header
+  background-color: #eaa085   
+  padding: 1.75em 0
+
+.header--nav
+  display: flex
+  justify-content: space-between      /*верхняя линия шапки с лого, меню и поиском */
+  padding: 0 2%
+
+
+.logo
+  margin-left: .8%
+
+.logo-link
+  color: $color-main
+  font:
+    family: $font-montserrat-b    /* logo */
+    size: 2em
+
+
+.nav_block
+  display: none
+  margin-top: .9em
+  position: absolute      /* блок с основным меню */
+  top: 100px
+  width: 96%
+  z-index: 1000
+
+.main-navs
+  background-color: #f9e4dc
+  width: 100%
+
+.navs--items
+  border-bottom: 1px solid #c66a70
+  list-style-type: none;
+  text-align: center
+  a
+    color: #e2874e
+    display: block
+    font:
+      family: $font-montserrat-r
+      size: .9333em
+    line-height: 4
+    text-transform: uppercase
+  &:first-child
+    border-top: 1px solid #c66a70
+
+.nav_toggle
+  border: 2px solid #fff
+  border-radius: 12px
+  padding: 0 10px 10px 10px
+  height: 50px
+  width: 51px
+  z-index: 1010
+
+
+.nav_toggle:focus
+  outline: 0
+
+.toggle_line
+  background-color: #fff
+  border-radius: 5px
+  display: block
+  height: 5px
+  margin-top: 8px
+  width: 28px
+
+
+/* cart & search blocks */
+
+.cart_search--block
+  align-items: center
+
+  width: 100px
+
+.cart_search
+  background: url(../img/search_sprite.png) 0 0 no-repeat
+  height: 18px
+  width: 50%
+
+.cart--link
+  background-position: 0 50%
+
+
+.search--link
+  background-position: 100% 50%
+
+/* central block in slider */
+
+.greating
+  font-size: 12px   /*что бы во всем header регулировать величину шрифта, т.к. он в EM вот этот EM и выставляем, а на 768px вернутся дефолтные 16px*/
+  max-width: 1200px
+  margin: 0 auto
+  padding-top: 4.65em
+  text-align: center
+  p
+    font:
+      family: $font-kaushanscript
+      size: 3em
+  h1
+    line-height: .97
+    font:
+      family: $font-montserrat-b
+      size: 4em
+    margin-top: .305em
+    text-transform: uppercase
+
+/* big button "read more..." */
+
+.btn-read--box
+  margin-top: 115px
+
+.btn-read--center
+  margin-left: 1%
+  text-align: center
+
+
+.btn-read
+  border: 3px solid #fff
+  padding: 7px 31px
+  position: relative
+  text-transform: uppercase
+
+  &:before
+    content: ''
+    display: block
+    border-top: 3px solid #fff
+    position: absolute
+    left: 31%
+    top: -54px
+    width: 60px
+
+    /* slider links == dotted */
+
+
+.slider_top
+  background-color: transparent
+  position: relative
+  width: 400%
+
+.slider_top
+  &:after
+    display: block
+    content: ''
+    clear: both
+
+.slider-nav
+  display: none
+
+.slider_item
+  display: block
+  float: left
+  width: 25%
+  max-width: 1920px
+
+
+.section--header
+  color: $color-header
+  text-align: center
+
+
+.section--header__discribe
+  font:
+    family: $font-kaushanscript
+    size: 1.6em
+  margin-left: 4%
+
+.section--header__text
+  font:
+    family: $font-montserrat-b
+    size: 1.7em
+  margin: .678em 0 1em 0
+  position: relative
+  text-align: center
+  text-transform: uppercase
+
+/* text after section's header */
+
+.content-text
+  color: $color-parag
+  font-family: $font-roboto-reg
+  line-height: 1.6
+  text-align: center
+
+
+  /* block about developer' team */
+
+.about_us
+  padding-top: 6em
+
+.about-us--photo
+  margin-top: 6.6em   /* блок с фотографиями */
+  ul
+    align-items: center
+    display: flex
+    flex-direction: column
+    width: 100%
+
+
+.about-us--item
+  margin: 0 2% 3em 2%
+  position: relative
+  z-index: 1000
+
+.about-us--img__info
+  align-items: center
+  background: linear-gradient(to bottom, rgba(219,117,117,0.9) 0%,rgba(224,160,121,0.9) 50%,rgba(227,204,124,0.9) 100%)   /*  всплывашка с текстом и градиентом */
+  display: flex
+  height: 26%
+  justify-content: center
+  left: 0
+  opacity: .9
+  position: absolute
+  top: 72.5%
+  width: 100%
+  img
+    height: 23px
+    margin: 0 30px -3px 0    /* картинка по середине */
+    width: 32px
+  span
+    display: inline-block
+    text-transform: uppercase
+    font:
+      family: $font-montserrat-b    /* текст по середине всплывашки */
+      size: 1.2em
+
+
+/* block with big numbers of progress */
+
+.our-progress
+  background-color: #95e1d3
+  margin-top: 7.2333em
+  ul
+    display: flex
+    flex-direction: column
+    width: 100%
+    li
+      text-align: center
+      padding: .5em 0
+      span
+        text-transform: uppercase
+
+.our-progress--num
+  font:
+    family: $font-montserrat-b    /* текст по середине всплывашки */
+    size: 2.8em
+  margin-bottom: .2em
+
+
+
+/* block lists of services */
+
+.services
+  padding: 7.2em 0 4.8em 0
+  ul
+    display: flex
+    flex-direction: column
+    margin-top: 3.2em
+    padding-bottom: 3.3em
+    &:first-child
+      border-bottom: 1px solid #d5d5d5
+
+.services_lists
+  margin: -1.2em auto 0 auto
+  max-width: 1200px
+
+.services--item
+  background-image: url(../img/services_sprite.png)
+  background-repeat: no-repeat
+  color: $color-parag
+  flex: 1 1 0
+  margin: 5% 2.4%
+  padding-left: 15%
+  p
+    line-height: 1.6
+    margin-top: .6em
+
+
+/* servces block's items sprites */
+
+.services--item_1
+  background-position: 0 0
+
+.services--item_2
+  background-position: 0 -339px
+
+.services--item_3
+  background-position: 0 -676px
+
+.services--item_4
+  background-position: 0 -169px
+
+.services--item_5
+  background-position: 0 -508px
+
+.services--item_6
+  background-position: 0 -841px
+
+
+  /* block with tab and iphone photos */
+
+#design
+  background: url(../img/design_bg_small.png)
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  min-height: 450px
+  position: relative
+
+.design_section
+  margin-top: 2em
+  h2
+    &:after
+      display: none
+
+.we_do 
+  padding: 1.2em 2% 8em 2%
+
+  /* block with slide down tabs */
+
+.tabs-block
+  display: flex
+  flex-direction: column
+  margin-top: 1.9em
+
+/* tabs half */
+
+.tabs_img
+  img
+    width: 100%
+
+.tabs
+  p
+    color: #a6a6a6
+    font-family: $font-roboto-it
+    line-height: 1.6
+    padding-right: 7%
+
+.tabs-header__box
+  background: url(../img/we-do_arrow.png)
+  background-repeat: no-repeat
+  background-position: 96% -16px 
+
+.tabs-header
+  background: url(../img/tabs_sprite.png)
+  background-repeat: no-repeat
+  border: 1px solid #4affff
+  cursor: pointer
+  padding: 1.58em 0 1.58em 60px
+
+
+/* this wrapper for padding-bottom for scroll */
+
+.tabs-text-box
+  border: 1px solid #4affff
+  border-top: none
+  box-sizing: border-box
+  max-height: 180px
+  overflow: hidden
+  padding: 1em 4.5% 1.55em 3%
+
+
+.tabs-text
+  max-height: 150px
+  outline: none
+
+  /* tabs-sprites */
+
+.tabs-header_1
+  background-position: 12px 13px
+
+.tabs-header_2,
+.tabs-header_3
+  margin-top: .8em
+
+.tabs-header_2
+  background-position: 12px -47px
+
+.tabs-header_3
+  background-position: 12px -106px
+
+
+/* slider block */
+
+.slider_block
+  background-color: #f8f8f8
+  padding: 1.66666em 0 6em 0
+  position: relative
+
+.slider_1 .owl-next,
+.slider_1 .owl-prev
+  top: 120%
+
+
+/* long block with main blocks content */
+
+.slider-inner
+  left: 0
+  overflow: hidden
+  position: relative
+  width: 3000px
+  &:after
+    clear: both
+    content: ''
+    display: block
+
+.slider-inner-box
+  padding-right: 15%
+
+/* small block with img and content */
+
+.speech-icon
+  display: none
+
+.speech-cite
+  text-align: left
+  blockquote
+    color: $color-parag
+    font:
+      family: $font-roboto-it
+      size: 1em
+    line-height: 1.5
+    text-align: center
+    word-spacing: -2px
+  cite
+    color: $color-header_3
+    display: inline-block
+    font:
+      family: $font-kaushanscript
+      size: 1.6em
+    margin: 17px 0 0 69px
+    position: relative
+
+    &:before
+      border-top: 3px solid #f38181
+      content: ''
+      display: inline-block
+      left: -70px
+      position: absolute
+      top: 14px
+      width: 60px
+.team
+  padding-top: 6.6em
+
+.team-photo
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  margin: 6em auto 0 auto
+  width: 80%
+
+
+.team-photo--item
+  position: relative
+  margin-bottom: 1em
+
+.team-photo_box
+  position: relative
+  img
+    width: 100%
+
+
+.team-photo-info
+  background: linear-gradient(to bottom, rgba(219,117,117,0.9) 0%,rgba(224,160,121,0.9) 50%,rgba(227,204,124,0.9) 100%)   /*  всплывашка с текстом и градиентом */
+  display: none
+  height: 100%
+  left: 0
+  opacity: .9
+  position: absolute
+  top: 0
+  width: 100%
+
+.team-photo--soc
+  bottom: -3px
+  display: flex
+  height: 33px
+  width: 100%
+  position: absolute
+  z-index: 1002
+  li
+    border-left: 2px solid #f9db87
+    flex: 1 1 0
+    justify-content: center
+    &:first-child
+      border: none
+    a
+      align-items: center
+      background-color: #fce38a
+      color: #f38181
+      font-size: 1.6em
+      height: 100%
+      justify-content: center
+      width: 100%
+      display: flex
+
+
+.person_info
+  padding-top: 2.35em
+  text-align: center
+
+.person_info--name
+  color: $color-header_3
+  font:
+    size: .93333em
+    family: $font-montserrat-r
+  text-transform: uppercase
+
+
+.person_info--post
+  color: $color-parag
+  font:
+    size: 1em
+    family: $font-roboto-it
+  margin-top: .8em
+
+
+
+#brands
+  background-color: #f8f8f8
+  padding: 3.5em 0
+
+.brands_block
+  width: 100%
+
+.brands_list
+  text-align: center
+  width: 100%
+
+
+.brands_list--items
+  display: inline-block
+  margin-bottom: 1em
+  text-align: center
+  width: 32%
+  img
+    width: 80%
+
+.gallery
+  display: flex
+  flex-direction: column
+  margin-top: 6.5em
+
+.gallery_col_box
+  display: flex
+  flex-direction: column
+
+.gallery_col
+  display: flex
+  flex-direction: column
+  img
+    display: block
+    width: 100%
+
+.gallery_img
+  position: relative
+  &:hover .gallery_info
+    display: flex
+
+
+.gallery_info
+  @extend .about-us--img__info
+  height: 17%
+  top: 74.5%
+
+.gallery_info--link
+  display: block
+  font-family: $font-montserrat-r
+  margin-left: -5%
+  text-transform: uppercase
+
+.gallery_info--text
+  display: none
+
+.slider_2
+  padding-bottom: 2.6em
+  .slider-inner
+    width: 3300px
+    .slider-inner-box
+      padding: 0 1%
+      width: 1100px
+
+
+.slider_image
+  height: 210px
+  margin: 0 auto
+  width: 210px
+  img
+    border-radius: 105px
+    height: 100%
+    max-width: 100%
+
+.speech-cite__middle
+  @extend .speech-cite
+  margin-top: 2em
+  padding-top: 2.2em
+
+
+.testimonials
+  background: url(../img/testim_bckg.jpg)
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  min-height: 830px
+  padding-top: 7.3em
+
+.testim_list
+  align-items: center
+  display: flex
+  flex-direction: column
+  margin: 1em 0
+  padding: 0 3%
+
+.testim_list--item
+  margin-top: 2em
+  img
+    border-radius: 50%
+    float: left
+    margin: 0 5.5% 0 2.5%
+
+.testim_list--info h4
+  color: $color-header_3
+  font:
+    family: $font-montserrat-r
+    size: .93333em
+  margin-bottom: .8em
+  text-transform: uppercase
+
+.testim_info--man
+  color: $color-header_3
+  font:
+    family: $font-roboto-it
+  position: relative
+  &:before
+    border-top: 3px solid #f38181
+    content: ''
+    display: inline-block
+    left: 0
+    position: absolute
+    top: 38px
+    width: 60px
+
+.testim_info--text
+  color: $color-parag
+  font:
+    family: $font-roboto-reg
+  line-height: 1.6
+  margin-top: 5.7em
+
+
+.blog
+  padding: 7.3em 2% 7.8em 2%
+
+.blog_box
+  margin-top: .5em
+
+.blog_list
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.blog_list--item
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  margin-bottom: 2em;
+  padding: 0 3%;
+  text-align: center
+  p
+    color: $color-parag
+    line-height: 1.6
+    margin-top: .8em
+  h4
+    margin: 1.4em 0 0 2%
+
+.blog_img--box
+  position: relative
+  img
+    width: 100%
+
+.blog_info
+  border-top: 1px solid #E5E5E5
+  margin-top: 1.1em
+  padding-top: 1.3em
+
+.blog_view,
+.blog_speech
+  background: url(../img/blog_info_sprite.png) 0 0 no-repeat;
+  color: #b3b3b3
+  margin-left: 3%
+  padding-left: 11%
+
+.blog_view
+  background-position: 0% -15%
+
+.blog_speech
+  background-position: 14% 88%
+
+.dates
+  background-color: #95e2d3
+  color: $color-main
+  font:
+    family: $font-montserrat-b
+    size: 2em
+  height: 70px
+  left: -2%
+  padding-top: 15px
+  position: absolute
+  text-align: center
+  top: 65%
+  width: 60px
+  span
+    display: block
+    font:
+      family: $font-roboto-it;
+      size: .5em
+
+.map
+  align-items: center
+  background: url(../img/map_bckg.jpg)
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  display: flex
+  justify-content: center
+  min-height: 200px
+  position: relative
+
+.open_map
+  height: 100px
+  width: 140px
+  a
+    background: url(../img/map_icon.png) 67px 5px no-repeat
+    color: #f38181
+    display: block
+    font: 
+      family: $font-montserrat-b
+      size: 1.5em
+    height: 100%
+    padding: 2.2em 0 0 .6em
+    position: relative
+    text-transform: uppercase
+    width: 100%
+    &:after
+      background-color: #f38181
+      bottom: 6px
+      display: block
+      content: ''
+      height: 3px
+      left: 48px
+      position: absolute
+      width: 60px
+
+.map_frame
+  display: none
+  height: 200px
+  left: 0
+  position: absolute
+  width: 100%
+
+.close_map
+  background-color: #f38181
+  border-radius: 6px
+  bottom: -43px
+  color: $color-main
+  cursor: pointer
+  display: none
+  font:
+      family: $font-roboto-reg
+      size: 1em
+  outline: none
+  padding: .8em 0
+  position: absolute
+  text-transform: uppercase
+  width: 100px
+  z-index: 1100
+
+.footer
+  background-color: #f8f8f8
+  color: $color-parag
+  padding-top: 1.6em
+
+.footer_list
+  display: flex
+  flex-direction: column
+  padding: .6em
+  position: relative
+  flex-wrap: wrap
+  width: 100%
+
+.footer_list--item
+  padding-top: .7em
+
+.footer_logo--link
+  font:
+    family: $font-montserrat-b
+    size: 3.0666em
+
+.footer_item--text
+  margin-top: 1.9em
+  line-height: 1.6
+
+.footer_followers
+  color: $color-header_3
+  margin-top: 3em
+  span
+    font:
+      family: $font-montserrat-b
+      size: 1.2em
+
+.footer_social
+  align-items: center
+  border-top:  1px solid #e5e5e5
+  display: flex
+  flex-direction: column
+  margin-top: 1.1em
+  padding: 1.2em 0 0 2%
+
+.footer_social--text
+  display: inline-block
+  font-family: $font-roboto-it
+  margin-bottom: 1em
+
+.footer_social--list
+  display: flex
+
+.footer_social--item
+  flex: 1 1 0
+  margin-left: 25px
+  &:first-child
+    margin-left: 0
+
+.footer_form
+  margin-top: 2.5em
+
+.footer_input--mail
+  color: #ccc
+  font:
+    family: $font-roboto-it
+  padding: .7em 0 .7em 3%
+  vertical-align: bottom
+  width: 46%
+
+.footer_input--submit
+  background-color: #95e1d3
+  color: $color-main
+  cursor: pointer
+  font:
+    family: $font-montserrat-b
+    size: .93333em
+  padding: 1em 0
+  text-transform: uppercase
+  width: 30%
+
+.footer_blog
+  margin-top: 2.5em
+
+.footer_blog--item
+  display: flex
+  margin-bottom: 2em
+
+.footer_blog--content
+  margin-left: 5.5%
+  padding-top: 1em
+
+.footer_blog--text
+  color: $color-header_3
+  font:
+    family: $font-montserrat-r;
+    size: .8em
+  line-height: 1.6
+  text-transform: uppercase
+
+.footer_blog--date
+    font:
+      family: $font-roboto-it
+      size: .86666em
+
+.footer_instagr
+  display: flex
+  flex-wrap: wrap
+  margin-top: 2.4em
+  width: 100%
+  &:after
+    content: ''
+    display: block
+    clear: both
+
+.footer_instagr--item
+  margin-right: 1%
+
+.footer_view--more
+  font:
+    family: $font-roboto-it
+    size: .86666em
+  margin-top: 1.4em
+
+.footer_bottom
+  border-top: 1px solid #e5e5e5
+  padding: 1.6em 0
+  text-align: center
+
+.template_info
+  color: $color-header_3
+  font:
+    family: $font-montserrat-r;
+    size: .93333em
+  a
+    color: #f38181
+
+
+.carousel_box
+  text-align: center
+
+.owl-page
+  width: 100px
+  height: 10px
+  background-color: coral
+
+  .active
+    background-color: #fff
+
+
+
+
+@import 'media.sass'
+
+
+  
+
+ 
+

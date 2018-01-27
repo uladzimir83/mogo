@@ -1,0 +1,518 @@
+
+$color-main: #fff
+$color-menu_hover: #fce38a
+$color-header: #000
+$color-parag: #999
+$color-header_3: #333
+
+$font-montserrat-b: montserratbold
+$font-montserrat-r: montserratregular
+$font-kaushanscript: kaushan_scriptregular
+$font-roboto-reg: robotoregular
+$font-roboto-it: robotolight_italic
+
+
+@media screen and (min-width: 480px)
+
+  .team-photo--item
+    margin: 1em auto 0 auto
+    max-width: 70%
+
+  #brands
+    margin-top: 2em
+
+  .gallery_col_box
+    flex-direction: row
+
+  .gallery_col
+    flex-direction: column
+
+  .blog_list--image
+    margin: 0 auto
+    width: 75%
+
+  .footer_social
+    align-items: none
+    display: flex
+    flex-direction: row
+
+  .footer_social--list
+    margin-left: 5%
+
+  .footer_social--item
+    margin-left: 16px
+
+  .footer_social--text
+    margin-bottom: 0
+
+@media screen and (min-width: 768px)
+
+  .header--nav
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0
+
+  .main-navs
+    background: none
+    display: flex
+    justify-content: space-between
+
+  .nav_block
+    display: block
+    position: static
+    top: 0
+    width: 41%
+
+  .navs--items
+    border: none
+    margin: 0 4.7%
+    a
+      color: $color-main
+      border-bottom: 3px solid transparent
+      line-height: 1
+      padding-bottom: 7px
+    &:first-child
+      border-top: none
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+
+  .nav_toggle
+    display: none
+
+  .cart_search--block
+    display: flex
+    margin-right: 40px
+    width: 8.8%
+
+  .greating
+    font-size: 13px
+    padding: 11.15em 7% 0
+    p
+      font:
+        family: $font-kaushanscript
+        size: 4.5em
+    h1
+      font:
+        family: $font-montserrat-b
+        size: 10em
+      line-height: .93
+      margin-top: .35em
+      text-transform: uppercase
+
+  .section--header__text
+    font-size: 2em
+    margin: .678em 0 2.6em 4%
+    &:after
+      background-color: #f38181
+      content: ''
+      display: block
+      height: 3px
+      left: 43%
+      position: absolute
+      top: 66px
+      width: 60px
+
+
+  .about-us--photo
+    ul
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+
+  .our-progress
+    ul
+      flex-direction: row
+      li
+        border-right: 1px solid #B5EAE0
+        align-items: center
+        color: $color-main
+        display: flex
+        flex-direction: column
+        flex: 1 1 0
+        padding: 5.4em 0 5.9em 0
+        &:first-child
+          border-left: 1px solid #B5EAE0
+
+  .our-progress--num
+    font-size: 4.8em
+
+  .services
+    ul
+      flex-direction: row
+
+  .services--item
+    background-position-x: 10px
+    margin: 0 2.4%
+    padding-left: 6%
+
+  #design
+    background: url(../img/design_bg.png)
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    min-height: 450px
+
+  .design
+    padding-top: 5.2em
+
+  .design_section
+    h2
+      &:after
+        display: block
+
+
+  .tabs-block
+    flex-direction: row
+    margin: 5.9em auto 0 auto
+    max-width: 1200px
+
+  .tabs_img
+    width: 50%
+    img
+      height: 380px
+      width: auto
+  
+  .tabs
+    width: 50%
+
+  .slider_block
+    padding: 4.66666em 0
+
+  .slider_1 .owl-prev,
+  .slider_1 .owl-next,
+  .slider_2 .owl-prev,
+  .slider_2 .owl-next
+    cursor: pointer
+    background: url(../img/slider_arrows.png) 0 0 no-repeat
+    height: 22px
+    position: absolute
+    top: 43%
+    width: 12px
+     
+  .slider_1 .owl-prev,
+  .slider_2 .owl-prev
+    background-position: 0 0
+    left: 2.5%
+    
+  .slider_1 .owl-next,
+  .slider_2 .owl-next
+    background-position: -58px 0
+    right: 1.5%
+    
+  .speech-icon
+    border: 2px solid #95e1d3
+    display: block
+    float: left
+    height: 150px
+    margin: 0 6% 0 3.5%
+    text-align: center
+    width: 150px
+
+    &:after
+      content: ''
+      display: inline-block
+      height: 55%
+      width: 0
+
+    img
+      display: inline-block
+      vertical-align: middle
+
+  .speech-cite
+    blockquote
+      font:
+        size: 1.6em
+      text-align: left
+
+  .team
+    padding-bottom: 8em
+
+  .team-photo--item
+    margin: 0
+    max-width: 32%
+
+  .team-photo
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    margin: 6em 0 0 0
+    padding: 0 1%
+    width: 100%
+
+  #brands
+    margin-top: 0
+
+  .brands_list--items
+    display: inline-block
+    margin-bottom: 1em
+    text-align: center
+    width: 16%
+    img
+      width: auto
+    &:first-child
+      text-align: left
+    &:last-child
+      text-align: right
+
+  .work
+    padding-top: 7.3em
+
+  .gallery
+    flex-direction: row
+
+  .gallery_info--link
+
+  .slider_2
+    padding: .5em 0 4em 0
+
+  .slider_image
+    float: left
+    margin: 0 4% 0 0
+
+  .testim_list
+    align-items: inherit
+    flex-direction: row
+    justify-content: space-between
+    margin: 1.4em 0
+    padding: 0 3%
+    &:first-child
+      margin-top: 3em
+
+  .testim_list--item
+    margin-top: 0
+    width: 47%
+
+  .testim_list--info
+    margin-left: 29%
+    padding-top: 1em
+
+  .testim_info--text
+    margin-top: 2.7em
+
+  .blog_list
+    flex-direction: row
+
+  .blog_list--item
+    margin: 0
+    padding: 0
+    width: 32%
+
+  .blog_list--image
+    margin: 0
+    width: auto
+
+  .dates
+    height: 56px
+    padding-top: 4px
+    top: 59%
+
+  .footer
+    padding: 4.6em 2% 0 2%
+
+  .footer_list
+    flex-direction: row
+    padding: 0 0 4.5em 0
+
+  .footer_list__item
+    padding-top: .7em
+
+  .footer_item__first
+    margin-right: 2%
+    width: 48%
+
+  .footer_item__second
+    width: 50%
+
+  .footer_item__third
+    width: 100%
+  
+
+@media screen and (min-width: 998px)
+  .greating
+    font-size: 15px
+    
+  #design
+      min-height: 530px
+
+  .dates
+    height: 70px
+    padding-top: 15px
+    top: 65%
+
+  .footer_item__first
+    margin-right: 0
+    padding-top: 0
+    width: 41.6666%
+
+  .footer_item__second
+    margin: 0 6% 0 .8%
+    width: 28.75%
+
+  .footer_item__third
+    width: 22.7%
+
+
+
+@media screen and (min-width: 1200px)
+  .header
+    background: url(../img/header_bckg.jpg)
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    max-height: 1000px
+
+  .header--nav
+    justify-content: space-between
+
+  .nav_block
+    margin-right: -36.5%
+
+  .navs--items
+    a
+      &:hover
+        color: $color-menu_hover
+        border-bottom: 3px solid $color-menu_hover
+
+  .cart_search--block
+    width: 6.4%
+
+
+  .slider_box
+    overflow: hidden
+    min-height: 750px
+    width: 100%
+
+  .slider_item
+    display: block
+
+  .slider-nav
+    display: block
+    margin-top: 7.7em
+    position: relative
+    ul
+      display: flex
+
+
+  .slider-link--item
+    border-top: 3px solid rgba(255, 255, 255, .7)
+    color: rgba(255, 255, 255, .7)
+    margin-left: 43px
+    padding-top: 1.5em
+    position: relative
+    width: 24%
+    &:first-child
+      margin-left: 0
+    
+
+
+  .slider-link--item.active
+    border-color: #fff
+    color: #fff
+    &:before
+      background-color: #f38181
+      content: ''
+      display: inline-block
+      height: 3px
+      position: absolute
+      top: -3px
+      width: 70px
+
+  .slider-link
+    font-family: $font-montserrat-r
+    text-transform: uppercase
+    letter-spacing: 1px
+
+  a.slider-link__active
+    color: #fff
+
+  .slider-link--border
+    background-color: #fff
+    height: 3px
+    position: absolute
+    top: -26px
+    width: 106%
+
+  .slider-link--border__red
+    background-color: #f38181
+    display: inline-block
+    height: 3px
+    position: absolute
+    top: 0
+    width: 70px
+
+  .slider-link--border__white
+    background-color: rgba(255, 255, 255, .5)
+
+
+  .slider-link--num
+    font:
+      family: $font-montserrat-b
+      size: 1.6em
+    margin-right: 5px
+
+  #design
+    min-height: 940px
+
+  .about-us--item
+    margin: 0
+    position: relative
+    z-index: 1000
+    &:hover
+      transform: translate(-9px, -9px)
+    &:hover .about-us--img__info    /* пункты списка, они же контейнеры для фото */
+      box-shadow: 9px 7px #95e1d3
+      display: flex
+
+  .about-us--img__info
+    align-items: center
+    background: linear-gradient(to bottom, rgba(219,117,117,0.9) 0%,rgba(224,160,121,0.9) 50%,rgba(227,204,124,0.9) 100%)   /*  всплывашка с текстом и градиентом */
+    display: none
+    height: 100%
+    justify-content: center
+    left: 0
+    opacity: .9
+    position: absolute
+    top: 0
+    width: 100%
+    img
+      height: 23px
+      margin: -13px 0 11px 0    /* картинка по середине */
+    a
+      align-items: center
+      display: flex
+      flex-direction: column
+
+  .team-photo--soc
+    display: none
+    height: 55px
+    top: 38%
+    li
+    background-color: #fff
+    a:hover
+      background-color: #f38181
+      color: $color-main
+
+  .team-photo_box:hover
+    box-shadow: 9px 7px #95e1d3
+    transform: translate(-10px, -10px)
+
+  .team-photo_box:hover .team-photo-info
+    display: block
+
+  .team-photo_box:hover .team-photo--soc
+    display: flex
+    left: 17%
+    width: 59.4737%
+
+  .gallery_info
+    flex-direction: column
+
+  .gallery_info--text
+    display: block
+    font-family: $font-roboto-it
+    line-height: 3
+    margin-left: -5%
+
+  .gallery_info--link
+    background: url(../img/gallery_icon.png) 50% 52% no-repeat
+    padding-top: 6em
